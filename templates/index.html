@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Spiteful Programmer</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #944848;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            margin-left: 10px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .response {
+            margin-top: 50px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Spiteful Programmer</h1>
+        <form method="POST" action="/">
+            <input type="text" name="user_input" placeholder="Type something...">
+            <input type="submit" value="Submit">
+        </form>
+        {% if response %}
+            <div class="response">
+                <h3>You asked the spiteful programmer:</h3>
+                <p>{{ user_input }}</p>
+                <h3>You got a reply!</h3>
+                <p>{{ response }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
