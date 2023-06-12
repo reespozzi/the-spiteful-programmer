@@ -15,7 +15,7 @@ Set up your OpenAI API key:
 
 Install the required dependencies:
 ```python
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 ```
 
 Run the Python web application:
