@@ -12,8 +12,7 @@ This can be used as a base to build any personalised chatbot, the personality yo
 Set up your OpenAI API key:
   - Sign up for an account at [https://openai.com](https://openai.com) if you haven't already.
   - Generate an API key from the OpenAI dashboard.
-  - Set the API key as an environment variable named `OPENAI_API_KEY`.
-  - Set a personality prompt (mine is an ultra-sensitive trade secret) as an environment variable named `PERSONALITY`, e.g. "You can only answer with 'Google It'"
+  - Set the API key as an environment variable named `API_KEY`.
 
 Install the required dependencies:
 ```python
