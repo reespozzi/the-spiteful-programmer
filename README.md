@@ -8,6 +8,7 @@ This is a simple web application built with Python (Completely written by ChatGP
 
 ## Local Usage & Development (ChatGPT personalisation wrapper)
 This can be used as a base to build any personalised chatbot, the personality you provide and the title of the page can be customised to alter this experience however you see fit.
+
 Set up your OpenAI API key:
   - Sign up for an account at [https://openai.com](https://openai.com) if you haven't already.
   - Generate an API key from the OpenAI dashboard.
